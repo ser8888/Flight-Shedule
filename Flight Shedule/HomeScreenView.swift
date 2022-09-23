@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct HomeScreenView: View {
+    //массив полетов
+ 
+    
+    
     var body: some View {
         Image(systemName: "airplane")
             .resizable()
