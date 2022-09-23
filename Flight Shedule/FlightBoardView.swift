@@ -14,8 +14,17 @@ struct FlightBoardView: View {
     
     
     var body: some View {
-        Text(boardName)
-            .font(.title)
+      
+        VStack {
+            Text(boardName)
+                .font(.title)
+            // fireach перебирает массив и на основе каждого элеменита массива создает элементы интерфейса  ForEach(flightInfo, id: \.self) { flight in - если класс не подписано под проторкол Identifible.
+            
+            ForEach(flightInfo) { flight in
+                Text("\(flight.airline) \(flight.number)")
+            }
+            
+        }
     }
 }
 
