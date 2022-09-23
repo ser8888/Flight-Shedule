@@ -9,7 +9,6 @@ import SwiftUI
 
 struct FlightBoardView: View {
     let boardName: String
-    
     var body: some View {
         Text(boardName)
             .font(.title)

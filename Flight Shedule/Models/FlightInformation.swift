@@ -13,6 +13,7 @@ enum FlightStatus: String, CaseIterable {
     case departed = "Departed"
 }
 
+
 class FlightInformation: NSObject, Identifiable {
     let id: Int
     let airline: String
