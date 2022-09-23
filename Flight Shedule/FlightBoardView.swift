@@ -9,6 +9,10 @@ import SwiftUI
 
 struct FlightBoardView: View {
     let boardName: String
+    //обьявляем массив,чтобы передать данные из основного экрана
+    let flightInfo: [FlightInformation]
+    
+    
     var body: some View {
         Text(boardName)
             .font(.title)
@@ -17,6 +21,6 @@ struct FlightBoardView: View {
 
 struct FlightBoardView_Previews: PreviewProvider {
     static var previews: some View {
-        FlightBoardView(boardName: "Arrival")
+        FlightBoardView(boardName: "Arrival", flightInfo: FlightInformation.generateFlights())
     }
 }
