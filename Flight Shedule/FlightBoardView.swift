@@ -20,8 +20,11 @@ struct FlightBoardView: View {
 //            ScrollView([.horizontal, .vertical]) {
 //                ForEach(flightInfo) { flight in
         List(flightInfo) { flight in
-            Text("\(flight.airline) \(flight.number)")
-            Text("\(flight.flightStatus )")
+//            Text("\(flight.airline) \(flight.number)")
+//            Text("\(flight.flightStatus )")
+            FlightRowView(flight: flight)
+            
+            
             //                }
         }
         
