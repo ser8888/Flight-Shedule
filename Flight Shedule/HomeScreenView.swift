@@ -9,7 +9,7 @@ import SwiftUI
 
 struct HomeScreenView: View {
     //массив полетов
-
+    private let flightInfo = FlightInformation.generateFlight()
     
     
     var body: some View {

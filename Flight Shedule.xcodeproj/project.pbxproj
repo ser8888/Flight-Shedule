@@ -14,12 +14,12 @@
 		7F4074AE28DC637400DBFD12 /* HomeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4074AD28DC637400DBFD12 /* HomeScreenView.swift */; };
 		7F4074B028DC644600DBFD12 /* UserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4074AF28DC644600DBFD12 /* UserProfileView.swift */; };
 		7F4074B228DC66CB00DBFD12 /* FlightBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4074B128DC66CB00DBFD12 /* FlightBoardView.swift */; };
-		7F4074B428DDD87A00DBFD12 /* Models in Resources */ = {isa = PBXBuildFile; fileRef = 7F4074B328DDD87A00DBFD12 /* Models */; };
 		7F4074BB28DDDA3D00DBFD12 /* TimelineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4074B628DDDA3D00DBFD12 /* TimelineTableViewCell.swift */; };
 		7F4074BC28DDDA3D00DBFD12 /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4074B728DDDA3D00DBFD12 /* Timeline.swift */; };
 		7F4074BD28DDDA3D00DBFD12 /* TimelinePoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4074B928DDDA3D00DBFD12 /* TimelinePoint.swift */; };
 		7F4074BE28DDDA3D00DBFD12 /* TimelineTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F4074BA28DDDA3D00DBFD12 /* TimelineTableViewCell.xib */; };
-		7FE6B39628DDDE6E00B6F53A /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE6B39528DDDE6E00B6F53A /* SwiftUIView.swift */; };
+		7FE6B39A28DDDF2000B6F53A /* FlightInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE6B39828DDDF2000B6F53A /* FlightInformation.swift */; };
+		7FE6B39B28DDDF2000B6F53A /* FlightHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE6B39928DDDF2000B6F53A /* FlightHistory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,13 +31,13 @@
 		7F4074AD28DC637400DBFD12 /* HomeScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenView.swift; sourceTree = "<group>"; };
 		7F4074AF28DC644600DBFD12 /* UserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileView.swift; sourceTree = "<group>"; };
 		7F4074B128DC66CB00DBFD12 /* FlightBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightBoardView.swift; sourceTree = "<group>"; };
-		7F4074B328DDD87A00DBFD12 /* Models */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Models; sourceTree = "<group>"; };
 		7F4074B628DDDA3D00DBFD12 /* TimelineTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineTableViewCell.swift; sourceTree = "<group>"; };
 		7F4074B728DDDA3D00DBFD12 /* Timeline.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timeline.swift; sourceTree = "<group>"; };
 		7F4074B828DDDA3D00DBFD12 /* TimelineTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimelineTableViewCell.h; sourceTree = "<group>"; };
 		7F4074B928DDDA3D00DBFD12 /* TimelinePoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelinePoint.swift; sourceTree = "<group>"; };
 		7F4074BA28DDDA3D00DBFD12 /* TimelineTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimelineTableViewCell.xib; sourceTree = "<group>"; };
-		7FE6B39528DDDE6E00B6F53A /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		7FE6B39828DDDF2000B6F53A /* FlightInformation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightInformation.swift; sourceTree = "<group>"; };
+		7FE6B39928DDDF2000B6F53A /* FlightHistory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightHistory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,10 +70,9 @@
 		7F40749E28DC630400DBFD12 /* Flight Shedule */ = {
 			isa = PBXGroup;
 			children = (
+				7FE6B39728DDDF2000B6F53A /* Models */,
 				7F4074B528DDDA3D00DBFD12 /* TimelineTableViewCell */,
-				7F4074B328DDD87A00DBFD12 /* Models */,
 				7F40749F28DC630400DBFD12 /* Flight_SheduleApp.swift */,
-				7FE6B39528DDDE6E00B6F53A /* SwiftUIView.swift */,
 				7F4074A128DC630400DBFD12 /* ContentView.swift */,
 				7F4074B128DC66CB00DBFD12 /* FlightBoardView.swift */,
 				7F4074AF28DC644600DBFD12 /* UserProfileView.swift */,
@@ -102,6 +101,15 @@
 				7F4074BA28DDDA3D00DBFD12 /* TimelineTableViewCell.xib */,
 			);
 			path = TimelineTableViewCell;
+			sourceTree = "<group>";
+		};
+		7FE6B39728DDDF2000B6F53A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7FE6B39828DDDF2000B6F53A /* FlightInformation.swift */,
+				7FE6B39928DDDF2000B6F53A /* FlightHistory.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,7 +171,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F4074BE28DDDA3D00DBFD12 /* TimelineTableViewCell.xib in Resources */,
-				7F4074B428DDD87A00DBFD12 /* Models in Resources */,
 				7F4074A728DC630500DBFD12 /* Preview Assets.xcassets in Resources */,
 				7F4074A428DC630500DBFD12 /* Assets.xcassets in Resources */,
 			);
@@ -178,11 +185,12 @@
 			files = (
 				7F4074AE28DC637400DBFD12 /* HomeScreenView.swift in Sources */,
 				7F4074BC28DDDA3D00DBFD12 /* Timeline.swift in Sources */,
-				7FE6B39628DDDE6E00B6F53A /* SwiftUIView.swift in Sources */,
+				7FE6B39A28DDDF2000B6F53A /* FlightInformation.swift in Sources */,
 				7F4074A228DC630400DBFD12 /* ContentView.swift in Sources */,
 				7F4074A028DC630400DBFD12 /* Flight_SheduleApp.swift in Sources */,
 				7F4074B228DC66CB00DBFD12 /* FlightBoardView.swift in Sources */,
 				7F4074BB28DDDA3D00DBFD12 /* TimelineTableViewCell.swift in Sources */,
+				7FE6B39B28DDDF2000B6F53A /* FlightHistory.swift in Sources */,
 				7F4074B028DC644600DBFD12 /* UserProfileView.swift in Sources */,
 				7F4074BD28DDDA3D00DBFD12 /* TimelinePoint.swift in Sources */,
 			);
