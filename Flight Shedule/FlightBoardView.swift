@@ -14,17 +14,19 @@ struct FlightBoardView: View {
     
     
     var body: some View {
-      
-        VStack {
-            Text(boardName)
-                .font(.title)
-            // fireach перебирает массив и на основе каждого элеменита массива создает элементы интерфейса  ForEach(flightInfo, id: \.self) { flight in - если класс не подписано под проторкол Identifible.
+
+            // foreach перебирает массив и на основе каждого элеменита массива создает элементы интерфейса  ForEach(flightInfo, id: \.self) { flight in - если класс не подписано под проторкол Identifible.
             
-            ForEach(flightInfo) { flight in
-                Text("\(flight.airline) \(flight.number)")
-            }
-            
+//            ScrollView([.horizontal, .vertical]) {
+//                ForEach(flightInfo) { flight in
+        List(flightInfo) { flight in
+            Text("\(flight.airline) \(flight.number)")
+            Text("\(flight.flightStatus )")
+            //                }
         }
+        
+        .navigationTitle(boardName)
+        .listStyle(.sidebar)
     }
 }
 
