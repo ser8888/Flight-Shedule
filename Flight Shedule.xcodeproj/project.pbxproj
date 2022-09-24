@@ -22,6 +22,7 @@
 		7FE6B39B28DDDF2000B6F53A /* FlightHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE6B39928DDDF2000B6F53A /* FlightHistory.swift */; };
 		7FE6B39D28DDEE7100B6F53A /* TimelineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE6B39C28DDEE7100B6F53A /* TimelineView.swift */; };
 		7FE6B39F28DE10E300B6F53A /* FlightRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE6B39E28DE10E300B6F53A /* FlightRowView.swift */; };
+		7FF5F25828DE15E6001E37F6 /* FlightDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF5F25728DE15E6001E37F6 /* FlightDetailsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		7FE6B39928DDDF2000B6F53A /* FlightHistory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightHistory.swift; sourceTree = "<group>"; };
 		7FE6B39C28DDEE7100B6F53A /* TimelineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineView.swift; sourceTree = "<group>"; };
 		7FE6B39E28DE10E300B6F53A /* FlightRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightRowView.swift; sourceTree = "<group>"; };
+		7FF5F25728DE15E6001E37F6 /* FlightDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightDetailsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				7F4074A128DC630400DBFD12 /* ContentView.swift */,
 				7F4074B128DC66CB00DBFD12 /* FlightBoardView.swift */,
 				7FE6B39E28DE10E300B6F53A /* FlightRowView.swift */,
+				7FF5F25728DE15E6001E37F6 /* FlightDetailsView.swift */,
 				7F4074AF28DC644600DBFD12 /* UserProfileView.swift */,
 				7F4074AD28DC637400DBFD12 /* HomeScreenView.swift */,
 				7FE6B39C28DDEE7100B6F53A /* TimelineView.swift */,
@@ -191,6 +194,7 @@
 			files = (
 				7F4074AE28DC637400DBFD12 /* HomeScreenView.swift in Sources */,
 				7F4074BC28DDDA3D00DBFD12 /* Timeline.swift in Sources */,
+				7FF5F25828DE15E6001E37F6 /* FlightDetailsView.swift in Sources */,
 				7FE6B39A28DDDF2000B6F53A /* FlightInformation.swift in Sources */,
 				7F4074A228DC630400DBFD12 /* ContentView.swift in Sources */,
 				7F4074A028DC630400DBFD12 /* Flight_SheduleApp.swift in Sources */,
