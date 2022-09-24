@@ -2,7 +2,7 @@
 //  FlightDetailsView.swift
 //  Flight Shedule
 //
-//  Created by John Doe on 23/09/2022.
+//  Created by Sergejs Tiselskis on 23/09/2022.
 //
 
 import SwiftUI
@@ -15,7 +15,7 @@ struct FlightDetailsView: View {
             HStack {
                 Text("\(flight.airline) \(flight.number)")
                     .font(.largeTitle)
-                Spacer() 
+                Spacer()
             }
             Text("\(flight.direction == .arrival ? "From" : "To" ) \(flight.otherAirport)")
             Text(flight.flightStatus)
