@@ -15,11 +15,7 @@ struct FlightDetailsView: View {
             HStack {
                 Text("\(flight.airline) \(flight.number)")
                     .font(.largeTitle)
-                Spacer()
-                Button("Done") {
-                    
-                }
-                
+                Spacer() 
             }
             Text("\(flight.direction == .arrival ? "From" : "To" ) \(flight.otherAirport)")
             Text(flight.flightStatus)

@@ -7,9 +7,25 @@
 
 import SwiftUI
 
+enum Route: Hashable {
+    case  arrivals
+    case departures
+    case timline
+}
+
 struct HomeScreenView: View {
     //массив полетов
     private let flightInfo = FlightInformation.generateFlights()
+    private var arrivals: [FlightInformation] {
+        flightInfo.filter {
+            $0.direction == .arrival
+        }
+    }
+    private var departures: [FlightInformation] {
+        flightInfo.filter {
+            $0.direction == .departure
+        }
+    }
     var body: some View {
         NavigationStack {
             ZStack {
@@ -20,28 +36,25 @@ struct HomeScreenView: View {
                     .rotationEffect(.degrees(270))
                 
                 VStack (alignment: .leading, spacing: 20) {
-                    NavigationLink("Arrivals") {
-                        //$0 - экземпляр класса FlightInformation
-                        FlightBoardView(
-                            boardName: "Arrivals",
-                            flightInfo: flightInfo.filter { $0.direction == .arrival}
-                        )
-                    }
-                    NavigationLink("Departures") {
-                        FlightBoardView(
-                            boardName: "Departures",
-                            flightInfo: flightInfo.filter { $0.direction == .departure}
-                        )
-                    }
-                    NavigationLink("Flight Timeline") {
-                        TimelineView(flights: flightInfo)
-                    }
+                    NavigationLink("Arrivals", value: Route.arrivals)
+                    NavigationLink("Departures", value: Route.departures)
+                    NavigationLink("Flight Timeline", value: Route.timline )
                     Spacer()
                 }
                 .font(.title)
                 .padding()
             }
             .navigationTitle("Airport")
+            .navigationDestination(for: Route.self) { route in
+                switch route {
+                case.arrivals:
+                    FlightBoardView(boardName: "Arrivals", flightInfo: arrivals)
+                case .departures:
+                    FlightBoardView(boardName: "Departures", flightInfo: departures)
+                case .timline:
+                    TimelineView(flights: flightInfo)
+                }
+            }
         }
     }
 }
