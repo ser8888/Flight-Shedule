@@ -26,7 +26,7 @@ struct FlightRowView: View {
             }
             //для открытия молального окна
             .sheet(isPresented: $isPresented) {
-                FlightDetailsView(flight: flight)
+                FlightDetailsView(isPresented: $isPresented, flight: flight)
         }
         }
     }
